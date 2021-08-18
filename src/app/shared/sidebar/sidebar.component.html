@@ -1,15 +1,20 @@
-<div class="bg-dark border-right p-3"id= "sidebar">
-    <h3 class="text-light">GifsApp</h3>
-    <hr class="text-white"> 
-    <div class="list-group list-reset">
-        <a *ngFor="let hist of historial, let i =index"
-          href="#"
-          class="list-group-item list-group-item-action"
-          (click)="buscarGifs( hist )"
-          >
 
-           {{hist | titlecase}}
-         </a>
-    </div>
-  
-  </div>
+ <h2>Busquedas</h2>
+ <hr>
+ <ul class="list-group">
+     <li routerLink=""        
+     routerLinkActive="active" 
+     [routerLinkActiveOptions]="{exact: true }"
+     class="list-group-item" >Buscar Pais
+    </li>
+
+     <li routerLink="region"  
+     routerLinkActive="active" 
+     class="list-group-item" >Por Region
+    </li>
+     
+     <li routerLink="capital" 
+     routerLinkActive="active" 
+     class="list-group-item">Por Capital
+    </li>
+ </ul> 
